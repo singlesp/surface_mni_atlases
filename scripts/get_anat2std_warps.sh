@@ -1,7 +1,9 @@
 #!/bin/sh
 
-#  get_anat2std_warps.sh
+#  get_anat2std_warps.sh <subject_ID>
 # This script will take T1.mgz from a freesurfer recon_all output directory, register it to MNI, and output warp files for anat2mni and mni2anat
+
+# Set dirs on lines 25 and 27
 #
 # This script uses fsl_anat, which performs more steps than is necessary to obtain the warp files (e.g. tissue segmentation). This is only necessary if you are in the peculiar situation of only having T1 images in freesurfer <mgz> space/orientation as fsl_anat does well with handling the reorientation and registration in that case. If this does not apply to you, feel free to just use flirt directly and save time. Just check that your warps work using the images created at the end of this script.
 #
@@ -15,7 +17,7 @@ export FREESURFER_HOME=/Applications/freesurfer/7.1.1
 #export SUBJECTS_DIR=$FREESURFER_HOME/subjects
 source $FREESURFER_HOME/SetUpFreeSurfer.sh
 
-i=$1
+i=$1 #subject ID
 
 echo ${i}
 

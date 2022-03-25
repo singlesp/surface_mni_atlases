@@ -3,6 +3,8 @@
 #  create_subject_atlases.sh <subject ID> <atlas>
 # Must input subject name for 1st argument and atlas for 2nd argument. choices are sch116, sch232, sch454, ls83 ls129, ls234, or ls463
 #
+# Check dir paths for lines 44 - 140.
+#
 # This script takes mni2anat, anat2mni warp files, subject freesurfer outputs, and fsaverage surface labels for schaefer or lausanne atlases and creates those atlases for a given subject in MNI space. This is useful if you have cleaned voxelwise data (eg preprocessed functional scan) in MNI space, and want to parcellate it into different surface-based atlases. Could be modified to output the atlases in native space.
 #
 #  Created by Parker Singleton && Keith Jamison on 3/9/22.
