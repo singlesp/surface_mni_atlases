@@ -1,0 +1,15 @@
+35	58	109	224	502	"48,49"	thalamusproper	Rh			
+36	59	110	225	503	50	caudate				
+37	60	111	226	504	51	putamen				
+38	61	112	227	505	52	pallidum				
+39	62	113	228	506	58	accumbensarea				
+40	63	114	229	507	53	hyppocampus				
+41	64	115	230	508	54	amygdala				
+76	122	227	456	1008	"9,10"	thalamusproper	Lh			
+77	123	228	457	1009	11	caudate				
+78	124	229	458	1010	12	putamen				
+79	125	230	459	1011	13	pallidum				
+80	126	231	460	1012	26	accumbensarea				
+81	127	232	461	1013	17	hyppocampus				
+82	128	233	462	1014	18	amygdala				
+83	129	234	463	1015	16	brainstem	Bl			
