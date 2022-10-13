@@ -39,6 +39,7 @@ mri_convert ${fsDIR}/${i}/mri/T1.mgz ${outDIR}/${i}/T1_fs_orient.nii.gz
 
 #brain registration and extraction etc (T1 processing) note: skipping segmentation appears to not be working so this takes longer than ideal
 fsl_anat -i ${outDIR}/${i}/T1_fs_orient.nii.gz -o ${outDIR}/${i}/T1 --clobber --nocrop --noseg --nosubcortseg --nocleanup
+## UPDATE: 10/13/22 adding the --nobias flag will enable --noseg to execute (skips FAST segmentation)
 
 #convert to warp files
 convertwarp -r $FSLDIR/data/standard/MNI152_T1_1mm.nii.gz -w ${outDIR}/${i}/T1.anat/T1_to_MNI_nonlin_coeff.nii.gz -o ${outDIR}/${i}/T1_to_MNI_nonlin_warp.nii.gz
